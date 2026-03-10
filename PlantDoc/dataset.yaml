@@ -1,0 +1,19 @@
+path: C:/Users/Utilisateur/Documents/travail/Suede/IoT/datasets/PlantDoc
+train: 224x224/images/train
+val: 224x224/images/test
+test: 224x224/images/test
+
+nc: 12
+names:
+  - Bell_Pepper_leaf
+  - Bell_peper_spot
+  - Potato_early
+  - Potato_late
+  - Tomato_Bacteria_Spot
+  - Tomato_Early
+  - Tomato_Late
+  - Tomato_Leaf
+  - Tomato_mold
+  - Tomato_Mosaic
+  - Tomato_Seporia_spot
+  - Tomato_Yellow

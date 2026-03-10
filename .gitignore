@@ -1,0 +1,82 @@
+*.jpg
+*.png
+*.jpeg
+*.txt
+runs
+hello_world/components
+hello_world/outputs
+*.ini
+*.cache
+
+# Directory metadata
+hello_world/.directory
+
+# Temporary files
+hello_world/*~
+hello_world/*.swp
+hello_world/*.swo
+hello_world/*.bak
+hello_world/*.tmp
+
+# Log files
+hello_world/*.log
+
+# Build artifacts and directories
+**/build/
+hello_world/build/
+hello_world/*.o
+hello_world/*.a
+hello_world/*.out
+hello_world/*.exe # For any host-side utilities compiled on Windows
+
+# ESP-IDF specific build outputs
+hello_world/*.bin
+hello_world/*.elf
+hello_world/*.map
+hello_world/flasher_args.json # Generated in build directory
+hello_world/sdkconfig.old
+hello_world/sdkconfig
+
+# ESP-IDF dependencies
+# For older versions or manual component management
+**/components/.idf/
+# For modern ESP-IDF component manager
+hello_world/managed_components/
+# If ESP-IDF tools are installed/referenced locally to the project
+hello_world/.espressif/
+
+# CMake generated files
+hello_world/CMakeCache.txt
+hello_world/CMakeFiles/
+hello_world/cmake_install.cmake
+hello_world/install_manifest.txt
+hello_world/CTestTestfile.cmake
+
+# Python environment files
+hello_world/*.pyc
+hello_world/*.pyo
+hello_world/*.pyd
+hello_world/__pycache__/
+hello_world/*.egg-info/
+hello_world/dist/
+
+# Virtual environment folders
+venv/
+hello_world/.venv/
+env/
+
+# Language Servers
+.hello_world/.clangd/
+.hello_world/.ccls-cache/
+.hello_world/compile_commands.json
+
+# Windows specific
+hello_world/Thumbs.db
+hello_world/ehthumbs.db
+hello_world/desktop.ini
+
+# User-specific configuration files
+hello_world/*.user
+hello_world/*.workspace # General workspace files, can be from various tools
+hello_world/*.suo       # Visual Studio Solution User Options
+hello_world/*.sln.docstates # Visual Studio
