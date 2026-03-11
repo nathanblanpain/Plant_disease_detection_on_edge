@@ -2,7 +2,6 @@
 *.png
 *.jpeg
 *.txt
-runs
 hello_world/components
 hello_world/outputs
 *.ini
