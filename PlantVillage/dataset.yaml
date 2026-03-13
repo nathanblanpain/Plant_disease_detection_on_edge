@@ -1,0 +1,13 @@
+path: PlantVillage
+train: 224x224/images
+val: 224x224/images
+test: 224x224/images
+
+nc: 6
+names:
+  - Bell_Pepper_Leaf
+  - Bell_Pepper_Spot
+  - Potato_Early
+  - Potato_Late
+  - Tomato_Mosaic
+  - Tomato_Septoria_Spot

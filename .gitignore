@@ -2,10 +2,14 @@
 *.png
 *.jpeg
 *.txt
+*.JPG
 hello_world/components
 hello_world/outputs
 *.ini
 *.cache
+runs
+best_runs
+*.pt
 
 # Directory metadata
 hello_world/.directory

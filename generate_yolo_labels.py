@@ -8,25 +8,19 @@ from PIL import Image
 
 # Mapping dossiers -> numéro de classe
 FOLDERS = [
-    "Bell_Pepper_leaf",       # 0
-    "Bell_Pepper_spot",        # 1
-    "Potato_early",           # 2
-    "Potato_late",            # 3
-    "Tomato_Bacteria_Spot",   # 4
-    "Tomato_Early",           # 5
-    "Tomato_Late",            # 6
-    "Tomato_Leaf",            # 7
-    "Tomato_mold",            # 8
-    "Tomato_Mosaic",          # 9
-    "Tomato_Septoria_Spot",    # 10
-    "Tomato_Yellow",          # 11
+    "Bell_Pepper_Leaf",       # 0
+    "Bell_Pepper_Spot",        # 1
+    "Potato_Early",           # 2
+    "Potato_Late",            # 3
+    "Tomato_Mosaic",          # 4
+    "Tomato_Septoria_Spot",    # 5
 ]
 
 # Extensions d'images supportées
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"}
 
 # ⚙️ Chemin racine de votre dataset (modifiez ce chemin)
-ROOT_DIR = ".\Plantdoc\\320x320\Train"
+ROOT_DIR = "./PlantDoc/416x416/contexts"
 
 def generate_labels(root_dir):
     total_created = 0
@@ -57,8 +51,8 @@ def generate_labels(root_dir):
                 with Image.open(img_path) as img:
                     width, height = img.size
 
-                # Format : class_id 0 0 width height
-                label_content = f"{class_id} 0 0 {width} {height}\n"
+                # Format : class_id 0.5 0.5 1 1
+                label_content = f"{class_id} 0.5 0.5 1 1\n"
 
                 with open(txt_path, "w") as f:
                     f.write(label_content)

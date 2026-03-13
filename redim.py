@@ -74,51 +74,65 @@ if __name__ == "__main__":
 
     # 224x224 TRAIN
     resize_dataset(
-        input_dir="PlantVillage/original/train",
-        output_dir="PlantVillage/224x224/train",
+        input_dir="PlantVillage/Tomato_Mosaic",
+        output_dir="PlantVillage/224x224/images",
+        target_size=(224, 224),
+        maintain_aspect_ratio=False
+    )
+    
+    resize_dataset(
+        input_dir="PlantVillage/Tomato_Septoria_Spot",
+        output_dir="PlantVillage/224x224/images",
+        target_size=(224, 224),
+        maintain_aspect_ratio=False
+    )
+    
+    resize_dataset(
+        input_dir="PlantVillage/Potato_Late",
+        output_dir="PlantVillage/224x224/images",
         target_size=(224, 224),
         maintain_aspect_ratio=False
     )
 
-    # 224x224 TEST
-    resize_dataset(
-        input_dir="PlantVillage/original/test",
-        output_dir="PlantVillage/224x224/test",
-        target_size=(224, 224),
-        maintain_aspect_ratio=False
-    )
+    # # 224x224 TEST
+    # resize_dataset(
+    #     input_dir="PlantVillage/original/test",
+    #     output_dir="PlantVillage/224x224/test",
+    #     target_size=(224, 224),
+    #     maintain_aspect_ratio=False
+    # )
     
     # 320x320 TRAIN
-    resize_dataset(
-        input_dir="PlantVillage/original/train",
-        output_dir="PlantVillage/320x320/train",
-        target_size=(320, 320),
-        maintain_aspect_ratio=False
-    )
+    # resize_dataset(
+    #     input_dir="PlantVillage/original/train",
+    #     output_dir="PlantVillage/320x320/train",
+    #     target_size=(320, 320),
+    #     maintain_aspect_ratio=False
+    # )
 
     # 320x320 TEST
-    resize_dataset(
-        input_dir="PlantVillage/original/test",
-        output_dir="PlantVillage/320x320/test",
-        target_size=(320, 320),
-        maintain_aspect_ratio=False
-    )
+    # resize_dataset(
+    #     input_dir="PlantVillage/",
+    #     output_dir="PlantVillage/320x320/",
+    #     target_size=(320, 320),
+    #     maintain_aspect_ratio=False
+    # )
     
-    # 416x416 TRAIN
-    resize_dataset(
-        input_dir="PlantVillage/original/train",
-        output_dir="PlantVillage/416x416/train",
-        target_size=(416, 416),
-        maintain_aspect_ratio=False
-    )
+    # # 416x416 TRAIN
+    # resize_dataset(
+    #     input_dir="PlantVillage/",
+    #     output_dir="PlantVillage/416x416/",
+    #     target_size=(416, 416),
+    #     maintain_aspect_ratio=False
+    # )
 
     # 416x416 TEST
-    resize_dataset(
-        input_dir="PlantVillage/original/test",
-        output_dir="PlantVillage/416x416/test",
-        target_size=(416, 416),
-        maintain_aspect_ratio=False
-    )
+    # resize_dataset(
+    #     input_dir="PlantVillage/original/test",
+    #     output_dir="PlantVillage/416x416/test",
+    #     target_size=(416, 416),
+    #     maintain_aspect_ratio=False
+    # )
 
 
     ################################
@@ -126,49 +140,50 @@ if __name__ == "__main__":
     ################################
 
     # 224x224 TRAIN
-    resize_dataset(
-        input_dir="PlantDoc/original/train",
-        output_dir="PlantDoc/224x224/train",
-        target_size=(224, 224),
-        maintain_aspect_ratio=False
-    )
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/train",
+    #     output_dir="PlantDoc/224x224/train",
+    #     target_size=(224, 224),
+    #     maintain_aspect_ratio=False
+    # )
 
-    # 224x224 TEST
-    resize_dataset(
-        input_dir="PlantDoc/original/test",
-        output_dir="PlantDoc/224x224/test",
-        target_size=(224, 224),
-        maintain_aspect_ratio=False
-    )
+    # # 224x224 TEST
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/test",
+    #     output_dir="PlantDoc/224x224/test",
+    #     target_size=(224, 224),
+    #     maintain_aspect_ratio=False
+    # )
     
-    # 320x320 TRAIN
-    resize_dataset(
-        input_dir="PlantDoc/original/train",
-        output_dir="PlantDoc/320x320/train",
-        target_size=(320, 320),
-        maintain_aspect_ratio=False
-    )
+    # # 320x320 TRAIN
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/train",
+    #     output_dir="PlantDoc/320x320/train",
+    #     target_size=(320, 320),
+    #     maintain_aspect_ratio=False
+    # )
 
-    # 320x320 TEST
-    resize_dataset(
-        input_dir="PlantDoc/original/test",
-        output_dir="PlantDoc/320x320/test",
-        target_size=(320, 320),
-        maintain_aspect_ratio=False
-    )
+    # # 320x320 TEST
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/test",
+    #     output_dir="PlantDoc/320x320/test",
+    #     target_size=(320, 320),
+    #     maintain_aspect_ratio=False
+    # )
     
-    # 416x416 TRAIN
-    resize_dataset(
-        input_dir="PlantDoc/original/train",
-        output_dir="PlantDoc/416x416/train",
-        target_size=(416, 416),
-        maintain_aspect_ratio=False
-    )
+    # # 416x416 TRAIN
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/train",
+    #     output_dir="PlantDoc/416x416/train",
+    #     target_size=(416, 416),
+    #     maintain_aspect_ratio=False
+    # )
 
-    # 416x416 TEST
-    resize_dataset(
-        input_dir="PlantDoc/original/test",
-        output_dir="PlantDoc/416x416/test",
-        target_size=(416, 416),
-        maintain_aspect_ratio=False
-    )
+    # # 416x416 TEST
+    # resize_dataset(
+    #     input_dir="PlantDoc/original/test",
+    #     output_dir="PlantDoc/416x416/test",
+    #     target_size=(416, 416),
+    #     maintain_aspect_ratio=False
+    # )
+    

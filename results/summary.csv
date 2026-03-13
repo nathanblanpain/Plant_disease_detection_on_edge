@@ -1,0 +1,1 @@
+timestamp,phase,run_idx,model_id,resolution,quantization,valid,rejection_reason,baseline_temp_c,mean_latency_ms,std_latency_ms,var_latency_us2,mean_cpu_pct,std_cpu_pct,var_cpu_pct2,mean_ram_pct,std_ram_pct,var_ram_pct2,mean_temp_c,std_temp_c,var_temp_c2,max_temp_c,map_score,accuracy,correct_count,labeled_count

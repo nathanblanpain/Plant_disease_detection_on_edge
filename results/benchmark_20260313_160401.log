@@ -1,0 +1,10 @@
+2026-03-13 16:04:01,556  INFO      Log file: results/benchmark_20260313_160401.log
+2026-03-13 16:04:01,557  INFO      Benchmark starting  –  phase=screening  environment: 22±2°C target
+2026-03-13 16:04:01,579  INFO      Initial CPU temperature: 51.0°C
+2026-03-13 16:04:01,580  INFO      
+======================================================================
+PHASE: SCREENING   model=yolov8_224/best_saved_model/best_int8.tflite  res=224  q=int8  runs=3
+======================================================================
+2026-03-13 16:04:01,580  WARNING   Image dir './PlantVillage_224/' not found — using synthetic images.
+2026-03-13 16:04:01,581  INFO      ── Step 1: Preparation ──────────────────────────────────
+2026-03-13 16:04:01,581  INFO      [TFLite] Loading yolov8_224/best_saved_model/best_int8.tflite  res=224  q=int8
